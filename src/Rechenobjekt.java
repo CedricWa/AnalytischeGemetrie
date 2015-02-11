@@ -1,8 +1,7 @@
 
-public abstract class Rechenobjekt {
+public abstract class rechenobjekt {
 
 	
 	
-	public abstract void setValue();
-	public abstract void getValue();
+	public abstract void setValue(double pxKoord, double pyKoord, double pzKoord);
 }
