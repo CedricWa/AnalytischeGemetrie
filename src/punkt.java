@@ -3,10 +3,17 @@ public class punkt extends rechenobjekt{
 	private double xKoord;
 	private double yKoord;
 	private double zKoord;
+	private String name;
 	public punkt(double xKoord, double yKoord, double zKoord) {
 		this.xKoord = xKoord;
 		this.yKoord = yKoord;
 		this.zKoord = zKoord;
+	}
+	public punkt(double xKoord, double yKoord, double zKoord, String name) {
+		this.xKoord = xKoord;
+		this.yKoord = yKoord;
+		this.zKoord = zKoord;
+		this.name = name;
 	}
 	
 	public void setValue(double pxKoord, double pyKoord, double pzKoord){
@@ -14,7 +21,15 @@ public class punkt extends rechenobjekt{
 		pyKoord = yKoord;
 		pzKoord = zKoord;
 	}
-	
+	public void setValue(double pxKoord, double pyKoord, double pzKoord, String pName){
+		pxKoord = xKoord;
+		pyKoord = yKoord;
+		pzKoord = zKoord;
+		name = pName;
+	}
+	public String getName(){
+		return name;
+	}
 	public double getyKoord() {
 		return yKoord;
 	}

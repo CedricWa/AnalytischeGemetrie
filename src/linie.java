@@ -2,11 +2,18 @@
 public class linie {
 	private vektor meinoV;
 	private vektor meinrV;
-
+	private String name;
+	
 	public linie(punkt pMeinPunkt, vektor pMeinVektor){
 		meinoV = pMeinPunkt.convertToVektor();
 		meinrV = pMeinVektor;
 	}
+	public linie(punkt pMeinPunkt, vektor pMeinVektor, String pName){
+		meinoV = pMeinPunkt.convertToVektor();
+		meinrV = pMeinVektor;
+		name = pName;
+	}
+
 
 	public punkt parameter(double k){
 		vektor ergebniss;
@@ -206,6 +213,9 @@ public class linie {
 		return meinrV;
 	}
 
+	public String getName(){
+		return name;
+	}
 	//Lagebeziehungen
 	public boolean identisch(linie l1){
 		boolean oV = false;

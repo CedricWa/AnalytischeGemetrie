@@ -2,7 +2,7 @@ public class vektor extends rechenobjekt{
 	private double xRichtung;
 	private double yRichtung;
 	private double zRichtung;
-	
+	private String name;
 	public vektor(double xKoord, double yKoord, double zKoord) {
 		super();
 		this.xRichtung = xKoord;
@@ -154,6 +154,9 @@ public class vektor extends rechenobjekt{
 	}
 	public double getzRichtung() {
 		return zRichtung;
+	}
+	public String getName(){
+		return name;
 	}
 	
 	public String toString(){
